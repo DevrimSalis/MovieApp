@@ -1,0 +1,14 @@
+.card-body{
+    background-color: #455d7a;
+    color: white;
+    height: 250px;
+}
+
+img{
+    min-height: 620px;
+    max-height: 620px;
+}
+
+.content-main{
+    margin-top: 20px;
+}
