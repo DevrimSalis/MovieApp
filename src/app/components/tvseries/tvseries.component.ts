@@ -2,24 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  selector: 'app-tvseries',
+  templateUrl: './tvseries.component.html',
+  styleUrls: ['./tvseries.component.css']
 })
-export class ContentComponent implements OnInit {
+export class TvseriesComponent implements OnInit {
 
-  trends: any = []
+  series: any = []
   image_path = 'https://image.tmdb.org/t/p/w500';
   youtube_path = "https://www.youtube.com/watch?v=";
   constructor(private contentService: ContentService) { }
 
   ngOnInit(): void {
-    this.getTrends();
+    this.getTvSeries();
   }
 
-  getTrends() {
-    this.contentService.getTrends().subscribe(response => {
-      this.trends = response.results;
+  getTvSeries() {
+    this.contentService.getTvSeries().subscribe(response => {
+      this.series = response.results;
     })
   }
 }

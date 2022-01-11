@@ -8,6 +8,8 @@ import { NaviComponent } from './components/navi/navi.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ContentComponent } from './components/content/content.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { TvseriesComponent } from './components/tvseries/tvseries.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ContentComponent } from './components/content/content.component';
     NaviComponent,
     FooterComponent,
     SliderComponent,
-    ContentComponent
+    ContentComponent,
+    MovieComponent,
+    TvseriesComponent
   ],
   imports: [
     BrowserModule,

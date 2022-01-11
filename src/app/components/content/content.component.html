@@ -1,12 +1,12 @@
 <div class="row content-main">
-    <div class="col-md-3 mb-5" *ngFor="let movie of movies">
+    <div class="col-md-3 mb-5" *ngFor="let trend of trends">
         <a href="#" class="hreflink">
             <div class="card">
-                <img src="{{image_path + movie.poster_path}}" class="card-img-top" alt="...">
+                <img src="{{image_path + trend.poster_path}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{movie.title}}</h5>
-                    <p class="card-text">{{movie.overview +"..." | slice:0:231}}</p>
-                    <!-- <a href="#" class="btn btn-primary">İzle</a> -->
+                    <h5 class="card-title">{{trend.title}}</h5>
+                    <p class="card-text">{{trend.overview +"..." | slice:0:231}}</p>
+                    <div class="vote">{{trend.vote_average}}</div>
                 </div>
             </div>
         </a>
